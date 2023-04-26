@@ -73,6 +73,7 @@ kops create cluster --name=demok8scluster.k8s.local --state=s3://kops-abhi-stora
 ### Configure Domain on Route53
 
 '''
+
 aws route53 create-hosted-zone --name <example.com> --caller-refernce
 
 ### Important: Edit the configuration as there are multiple resources created which won't fall into the free tier.
